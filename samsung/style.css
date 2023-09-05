@@ -1,0 +1,894 @@
+@font-face {
+  font-family: "samsung";
+  /* Choose a font name */
+  src: url("fonts/SamsungOne-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "samsung-bold";
+  /* Choose a font name */
+  src: url("fonts/SamsungSharpSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "samsung-small";
+  /* Choose a font name */
+  src: url("fonts/SamsungOne-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "samsungSharp";
+  /* Choose a font name */
+  src: url("fonts/samsungsharpsans.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SamsungOne-400";
+}
+footer {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: transparent;
+}
+
+.logo {
+  width: 120px;
+  height: 80px;
+  display: inline-flex;
+  margin-left: 60px;
+  align-items: center;
+  margin-right: 64px;
+}
+
+.nav-items {
+  height: 100%;
+  width: 1060px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.list {
+  width: 683px;
+  height: 100%;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  font-size: 14px;
+  padding: 6px;
+  font-family: "samsung", Georgia;
+  cursor: pointer;
+}
+#navbar button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+.nav-items2 {
+  width: 160px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-items3 {
+  width: 136px;
+  height: 100%;
+  margin-left: 28px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+#mainbody {
+  width: 100%;
+  height: 89vh;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.video-container {
+  text-align: center;
+  width: 95%;
+  height: 89vh;
+  display: inline-flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "samsung-bold";
+  justify-content: center;
+}
+
+.main-para {
+  position: absolute;
+  top: 48px;
+  font-size: 18px;
+  font-family: "samsung-small";
+}
+
+.Previous {
+  background-color: rgb(134, 134, 134);
+  width: 6%;
+  font-size: 25px;
+  font-weight: 10;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.part-1 {
+  width: 50%;
+  height: 89vh;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.part-2 {
+  width: 50%;
+  height: 89vh;
+  position: absolute;
+  display: inline-flex;
+  z-index: 1;
+  right: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.next {
+  background-color: rgb(134, 134, 134);
+  width: 6%;
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.Previous:hover,
+.next:hover {
+  background-color: black;
+}
+
+.part-1-1 {
+  width: 50%;
+  height: 23%;
+  margin-left: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 38px;
+}
+.part-1-1-1 {
+  height: 50%;
+  width: 100%;
+  display: inline-flex;
+  align-items: end;
+  justify-content: center;
+}
+.part-1-1-2 {
+  width: 100%;
+  height: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SamsungOne-400";
+  column-gap: 20px;
+}
+.Learn {
+  border-bottom: 3px solid black;
+  padding-bottom: 2px;
+}
+.learn-more {
+  font-family: "samsung-small";
+  color: black;
+  display: inline-flex;
+  text-decoration: none;
+}
+.Buy-Now {
+  width: 27%;
+  height: 53%;
+}
+.Buy-Now > button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.Buy-Now > button:hover {
+  background-color: #555;
+}
+.part-2 > .part-1-1 {
+  margin-right: 35px;
+}
+h2 {
+  font-family: "samsung-bold";
+}
+#second-main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 902px;
+  display: flex;
+  justify-content: center;
+  display: inline-flex;
+}
+#section-1 {
+  width: 90%;
+  height: 100%;
+}
+.head {
+  width: 100%;
+  height: 112px;
+  display: inline-flex;
+  align-items: flex-end;
+  text-align: center;
+}
+.head-2 {
+  height: 48px;
+  width: 100%;
+  font-size: 26px;
+  padding-bottom: 16px;
+}
+.section-1-1 {
+  width: 100%;
+  height: 790px;
+}
+.tab {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tab_list {
+  font-family: "samsung";
+}
+.tab_elements {
+  font-size: 50px;
+}
+
+.tab button {
+  font-size: 18px;
+}
+.list_items {
+  margin-right: 28px;
+}
+.images {
+  width: 100%;
+  height: 708px;
+  display: inline-flex;
+  gap: 3%;
+}
+.img-section-1 {
+  width: 50%;
+  height: 100%;
+  padding: 0 24px 28px 0;
+  padding-left: 10px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: -28px;
+}
+.img-section-2 {
+  width: 50%;
+  height: 100%;
+  display: block;
+  text-align: center;
+}
+
+.img-1 {
+  width: 684px;
+  height: 684px;
+  border-radius: 3%;
+  z-index: 0;
+  color: white;
+  margin-left: -10px;
+  overflow: hidden; /* Hide any overflowing content */
+  position: relative; /* Establish a positioning context */
+}
+.img-inner {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/BigTile_684X684_GB3.png);
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.img-1:hover .img-inner {
+  transform: scale(1.03);
+}
+
+.img-text-1 {
+  height: 64px;
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 72px;
+  font-family: "Samsung";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.img-section-2-1 {
+  width: 100%;
+  height: 50%;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 3%;
+}
+.img-section-2-2 {
+  width: 100%;
+  height: 50%;
+  display: inline-flex;
+  justify-content: flex-end;
+  position: relative;
+  gap: 3%;
+  bottom: 15px;
+  align-items: center;
+}
+.img-section-2-1-1 {
+  width: 330px;
+  height: 330px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img-section-2-1-2 {
+  width: 330px;
+  height: 330px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img-section-2-2-1 {
+  width: 330px;
+  height: 330px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.img-section-2-2-2 {
+  width: 330px;
+  height: 330px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.img-in {
+  width: 330px;
+  height: 330px;
+  border-radius: 10%;
+}
+.img-section-2 h3 {
+  position: absolute;
+  font-family: "samsung-small";
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+.img-section-2-2 h3 {
+  margin-bottom: 11%;
+}
+.img-section-2 p {
+  font-family: "samsung-small";
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 3.5%;
+}
+.img-section-2-1-2 p {
+  font-family: "samsung-small";
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 3%;
+}
+.img-section-2-2-1 p {
+  font-family: "samsung-small";
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 6%;
+}
+.img-section-2-2-2 p {
+  font-family: "samsung-small";
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 7.5%;
+}
+.img-1 p {
+  font-family: "samsung-small";
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 7.5%;
+  z-index: 1;
+}
+.third-main {
+  width: 100%;
+  height: 810px;
+  display: block;
+  display: inline-flex;
+  justify-content: center;
+  font-family: "samsungsharpsans";
+}
+.third-section-1 {
+  width: 95%;
+  height: 100%;
+  background-image: url(images/Fold5ProductMarketing_1440x810.webp);
+  position: relative;
+  font-family: "samsungsharpsans";
+}
+.third-section-head1 {
+  width: 100%;
+  height: 157px;
+  font-size: 25px;
+  font-family: "samsungsharpsans";
+  text-align: center;
+}
+.third-section-head1 h2 {
+  padding-top: 48px;
+}
+.third-section-head2 {
+  width: 100%;
+  height: 64px;
+}
+.h2-inside-third {
+  text-align: center;
+  display: block;
+  bottom: 142px;
+  left: 38%;
+  position: absolute;
+  font-size: 48px;
+}
+.third-section-1 p {
+  font-family: "samsung-small";
+  display: block;
+  bottom: 11%;
+  left: 40%;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.third-last {
+  width: 100%;
+  height: 88px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+.inner-of-third-last {
+  width: 100%;
+  height: 60%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Buy-Now2 {
+  border-radius: 15%;
+  background-color: black;
+  color: white;
+}
+
+.fourth-main {
+  width: 100%;
+  height: 810px;
+  display: inline-flex;
+  justify-content: center;
+}
+.section-fourth {
+  background-image: url(images/Neo_Qled_8K_1440x810.jpg);
+  width: 95%;
+  height: 100%;
+  position: relative;
+}
+.section-fourth-head {
+  width: 100%;
+  height: 157px;
+}
+.section-fourth-head h2 {
+  padding-top: 48px;
+  text-align: center;
+  font-size: 38px;
+  color: white;
+}
+
+.section-fourth-head .tab_list .list_items {
+  color: white;
+  font-size: 18px;
+}
+.section-fourth h1 {
+  font-family: "samsung-bold";
+  color: white;
+  font-size: 48px;
+  position: absolute;
+  bottom: 18.5%;
+  left: 42.2%;
+}
+.section-fourth p {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 12%;
+  left: 40%;
+  font-family: "samsung-small";
+  text-align: center;
+  font-size: 18px;
+}
+.inner-of-third-last > .Buy-Now {
+  width: 7%;
+  height: 75%;
+}
+.inner-of-third-last > .Learn {
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.section-fourth
+  > .third-last
+  > .inner-of-third-last
+  > .Buy-Now
+  > .Buy-Now-button {
+  background-color: white;
+  color: black;
+}
+
+.fifth-main {
+  width: 100%;
+  height: 810px;
+  display: inline-flex;
+  justify-content: center;
+}
+.fifth-main > .section-fourth {
+  background-image: url(images/12kg-AI-ecobubble-with-AI.webp);
+}
+.fifth-main > .section-fourth > .section-fourth-head > h2 {
+  color: black;
+}
+.fifth-main
+  > .section-fourth
+  > .section-fourth-head
+  > .tab
+  > .tab_list
+  .list_items {
+  color: black;
+  font-size: 18px;
+}
+.fifth-main > .section-fourth h1 {
+  left: 34%;
+  color: black;
+}
+.fifth-main > .section-fourth p {
+  color: black;
+  left: 34%;
+}
+
+.fifth-main
+  > .section-fourth
+  > .third-last
+  > .inner-of-third-last
+  > .Buy-Now
+  > .Buy-Now-button {
+  background-color: black;
+  color: white;
+}
+
+#sixth-main {
+  width: 100%;
+  height: 873px;
+  display: inline-flex;
+  justify-content: center;
+ 
+}
+#sixth-main > #section-1
+{
+  margin-left: 25px;
+}
+#sixth-main > #section-1 > .section-1-1 > .tab {
+  height: 30px;
+}
+#sixth-main
+  > #section-1
+  > .section-1-1
+  > .images
+  > .img-section-1
+  > .img-1
+  > .img-inner {
+  background-image: url(images/mx0147_home-explore-banner_pc_684x684.webp);
+}
+#sixth-main > #section-1 > .section-1-1 > .images > .img-section-2 ol li h2 {
+  text-align: start;
+  padding-top: 15%;
+}
+.text-box {
+  width: 100%;
+
+  height: 112px;
+  display: flex;
+  justify-content: center;
+}
+.text-box h1 {
+  margin-top: 48px;
+  font-family: "samsung-bold";
+  padding-bottom: 16px;
+  font-size: 38px;
+}
+.input-field {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+}
+.search-box {
+  width: 600px;
+  height: 146px;
+}
+.input-form {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#search {
+  width: 386px;
+  height: 48px;
+  border-radius: 50px;
+  padding-left: 59px;
+  font-size: 18px;
+  border: 1px solid black;
+  background-color: #f7f7f7;
+}
+
+.search-icon {
+  position: absolute;
+  top: 38%;
+  left: 102px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("images/search.png");
+  background-size: cover;
+  display: block;
+}
+.button-last {
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: 35px;
+  width: max-content;
+  display: block;
+  font-size: 12px;
+  font-family: "samsung-small";
+  font-weight: lighter;
+}
+
+.options {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.tab_list2 > .list_items {
+  display: inline-flex;
+  margin-right: 3%;
+  margin-top: 3px;
+}
+.footer-main {
+  width: 100%;
+  height: 418px;
+  display: flex;
+  justify-content: center;
+}
+.footer-part-1 {
+  width: 95%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.footer-part-1-1 {
+  width: 1248px;
+  height: 100%;
+}
+.footer-part-1-1 p {
+  font-size: 12px;
+  font-family: "samsung-small";
+  line-height: 2.9;
+}
+.footer {
+  width: 100%;
+  height: 797px;
+}
+.footer-column {
+  width: 100%;
+  height: 596px;
+  display: inline-flex;
+}
+.footer-1 {
+  width: 25%;
+  height: 100%;
+  border: 1px solid #ccc;
+  font-family: "samsung";
+}
+.footer-1 > h3 {
+  padding-left: 25px;
+  padding-top: 12px;
+}
+
+.footer-anchor {
+  font-size: 0.97222222vw;
+  font-family: "samsung-small";
+  text-decoration: none;
+  color: #000;
+}
+.footer-anchor:hover {
+  text-decoration: underline;
+}
+
+.footer-list {
+  padding-left: 25px;
+  padding-top: 12px;
+}
+.footer-list-1 {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.footer-2 {
+  width: 100%;
+  height: 201px;
+  display: flex;
+  justify-content: center;
+}   
+.footer-2-1 {
+  width: 100%;
+  height: 139px;
+}
+.footer-2-with-padding {
+  width: 1440px;
+  height: 100%;
+}
+.footer-2-2 {
+  width: 100x;
+  height: 64px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  font-family: 'samsung';
+  justify-content: space-between;
+}
+.footer-lang
+{
+  display: inline-flex;
+  padding-right: 24px;
+}
+.footer-lan-anch {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  
+}
+.footer-terms
+{
+  width: 250px;
+  height: 100%;
+  display: flex;
+
+}
+.slash-footer
+{
+  margin-left: 24px;
+  width: 2px ;
+  height: 12px;
+  font-weight: lighter;
+  color:#d9d9d9;
+}
+.ul-footer-terms
+{
+  display: inline-flex;
+  font-size: 12px;
+  align-items: center;
+  padding-right: 20px;
+}
+.list-items-footer-terms
+{
+  padding-right: 24px;
+  font-size: 12px;
+}
+.footer-icons
+{
+  
+  width: 323px;
+  height: 100%;
+  display: table;
+  float: right;
+}
+.footer-first
+{
+  display: inline-flex;
+}
+.footer-icons
+{
+  margin-right: 24px;
+
+}
+.footer-icons-span
+{
+  display: table-cell;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.ul-of-icons
+{
+  display: flex;
+  vertical-align: middle;
+  padding-left: 12px;
+  padding-top: 10px;
+  
+}
+.icons-div
+{
+  display: flex;
+  width: 234px;
+  height: 100%;
+  align-items: center;
+  
+
+}
+.list-of-icons
+{
+  display: flex;
+  width: 32px;
+  height:32px;
+  font-size: 23px;
+  padding-right: 7px;
+
+}
+.footer-2-1> p{
+  padding: 20px;
+  font-size: 12px;
+}
